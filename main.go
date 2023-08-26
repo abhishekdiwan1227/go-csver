@@ -20,7 +20,7 @@ func main() {
 		fmt.Println(helpText)
 	} else if len(args) == 4 && (args[0] == "-i" || args[0] == "--input") && args[1] != "" && (args[2] == "-s" || args[2] == "--size") && args[3] != "" {
 		inputPath := strings.Trim(args[1], " ")
-		sampleSize, err := strconv.ParseInt(strings.Trim(args[3], " "), 0, 32)
+		sampleSize, err := strconv.ParseUint(strings.Trim(args[3], " "), 0, 32)
 		if err != nil {
 			panic(err)
 		}
