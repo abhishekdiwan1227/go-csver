@@ -1,5 +1,5 @@
 # go-csver
-A barebones CLI app for inferring types from a .csv file.
+A barebones CLI utility for inferring types from a .csv file.
 
 # Installation
 After cloning the repo to local, run command ```go install .``` at the root folder
